@@ -3,23 +3,23 @@
     "author": "Roman Hnatiuk",
     "variables":
     {
-        "black": "hsl(0, 0%, 5%)",
-        "white": "hsl(0, 0%, 95%)",
-        "strong-grey": "hsl(0, 0%, 15%)",
-        "weak-grey": "hsl(0, 1%, 44%)",
-        "strong-blue": "hsl(204, 91%, 55%)",
-        "weak-blue": "hsl(207, 91%, 67%)",
-        "strong-cyan": "hsl(173, 100%, 36%)",
-        "weak-cyan": "hsl(167, 43%, 64%)",
-        "strong-orange": "hsl(29, 87%, 55%)",
-        "weak-orange": "hsl(26, 78%, 72%)",
-        "strong-violet": "hsl(241, 81%, 68%)",
-        "weak-violet": "hsl(247, 53%, 71%)",
         "purple": "hsl(305, 35%, 56%)",
         "yellow": "hsl(41, 93%, 72%)",
         "green": "hsl(130, 45%, 52%)",
         "red": "hsl(9, 81%, 51%)",
-        "pink": "hsl(340, 75%, 62%)"
+        "pink": "hsl(340, 75%, 62%)",
+        "black": "hsl(0, 0%, 5%)",
+        "white": "hsl(0, 0%, 95%)",
+        "grey-strong": "hsl(0, 0%, 15%)",
+        "grey-weak": "hsl(0, 1%, 44%)",
+        "blue-strong": "hsl(204, 91%, 55%)",
+        "blue-weak": "hsl(207, 91%, 67%)",
+        "cyan-strong": "hsl(173, 100%, 36%)",
+        "cyan-weak": "hsl(167, 43%, 64%)",
+        "orange-strong": "hsl(29, 87%, 55%)",
+        "orange-weak": "hsl(26, 78%, 72%)",
+        "violet-strong": "hsl(241, 81%, 68%)",
+        "violet-weak": "hsl(247, 53%, 71%)"
     },
     "globals":
     {
@@ -27,30 +27,30 @@
         "background": "var(black)",
         "accent": "var(yellow)",
         "caret": "var(yellow)",
-        "line_highlight": "var(strong-grey)",
-        "selection": "var(strong-grey)",
-        "selection_border": "var(strong-grey)",
-        "inactive_selection": "var(weak-grey)",
+        "line_highlight": "var(grey-strong)",
+        "selection": "var(grey-strong)",
+        "selection_border": "var(grey-strong)",
+        "inactive_selection": "var(grey-weak)",
         "misspelling": "var(pink)",
         "shadow": "color(var(black) alpha(0.25))",
         "active_guide": "var(black)",
         "stack_guide": "color(var(black))",
-        "highlight": "var(weak-grey)",
+        "highlight": "var(grey-weak)",
         "find_highlight_foreground": "var(black)",
-        "find_highlight": "var(weak-grey)",
+        "find_highlight": "var(grey-weak)",
         "brackets_options": "underline",
-        "brackets_foreground": "var(strong-cyan)",
+        "brackets_foreground": "var(cyan-strong)",
         "bracket_contents_options": "underline",
-        "bracket_contents_foreground": "var(strong-cyan)",
+        "bracket_contents_foreground": "var(cyan-strong)",
         "tags_options": "stippled_underline",
-        "tags_foreground": "var(strong-grey)"
+        "tags_foreground": "var(grey-strong)"
     },
     "rules":
     [
         {
             "name": "Comment",
             "scope": "comment, punctuation.definition.comment",
-            "foreground": "var(weak-grey)"
+            "foreground": "var(grey-weak)"
         },
         {
             "name": "String",
@@ -60,7 +60,7 @@
         {
             "name": "Punctuation",
             "scope": "punctuation.definition - punctuation.definition.numeric.base",
-            "foreground": "var(weak-cyan)"
+            "foreground": "var(cyan-weak)"
         },
         {
             "name": "Number",
@@ -75,31 +75,31 @@
         {
             "name": "Built-in constant",
             "scope": "constant.language",
-            "foreground": "var(weak-violet)",
+            "foreground": "var(violet-weak)",
             "font_style": "normal"
         },
         {
             "name": "User-defined constant",
             "scope": "constant.character, constant.other",
-            "foreground": "var(weak-cyan)",
+            "foreground": "var(cyan-weak)",
             "font_style": "normal"
         },
         {
             "name": "Member Variable",
             "scope": "variable.member",
-            "foreground": "var(weak-cyan)",
+            "foreground": "var(cyan-weak)",
             "font_style": "normal"
         },
         {
             "name": "Keyword",
             "scope": "keyword - keyword.operator, keyword.operator.word",
-            "foreground": "var(weak-cyan)",
+            "foreground": "var(cyan-weak)",
             "font_style": "normal"
         },
         {
             "name": "Operators",
             "scope": "keyword.operator",
-            "foreground": "var(weak-cyan)",
+            "foreground": "var(cyan-weak)",
             "font_style": "normal"
         },
         {
@@ -129,25 +129,25 @@
         {
             "name": "JavaScript Dollar",
             "scope": "variable.other.dollar.only.js, variable.other.object.dollar.only.js, variable.type.dollar.only.js, support.class.dollar.only.js",
-            "foreground": "var(strong-blue)",
+            "foreground": "var(blue-strong)",
             "font_style": "normal"
         },
         {
             "name": "Storage",
             "scope": "storage",
-            "foreground": "var(weak-cyan)",
+            "foreground": "var(cyan-weak)",
             "font_style": "normal"
         },
         {
             "name": "Storage type",
             "scope": "storage.type",
-            "foreground": "var(weak-cyan)",
+            "foreground": "var(cyan-weak)",
             "font_style": "normal"
         },
         {
             "name": "Entity name",
             "scope": "entity.name.function",
-            "foreground": "var(weak-blue)"
+            "foreground": "var(blue-weak)"
         },
         {
             "name": "Entity name",
@@ -157,7 +157,7 @@
         {
             "name": "Inherited class",
             "scope": "entity.other.inherited-class",
-            "foreground": "var(weak-orange)"
+            "foreground": "var(orange-weak)"
         },
         {
             "name": "Function argument",
@@ -167,7 +167,7 @@
         {
             "name": "Language variable",
             "scope": "variable.language",
-            "foreground": "var(weak-violet)"
+            "foreground": "var(violet-weak)"
         },
         {
             "name": "Tag name",
@@ -177,18 +177,18 @@
         {
             "name": "Tag attribute",
             "scope": "entity.other.attribute-name",
-            "foreground": "var(weak-violet)"
+            "foreground": "var(violet-weak)"
         },
         {
             "name": "Function call",
             "scope": "variable.function, variable.annotation",
-            "foreground": "var(weak-blue)",
+            "foreground": "var(blue-weak)",
             "font_style": "normal"
         },
         {
             "name": "Library function",
             "scope": "support.function, support.macro",
-            "foreground": "var(weak-blue)",
+            "foreground": "var(blue-weak)",
             "font_style": "normal"
         },
         {
@@ -200,7 +200,7 @@
         {
             "name": "Library class/type",
             "scope": "support.type, support.class",
-            "foreground": "var(weak-orange)"
+            "foreground": "var(orange-weak)"
         },
         {
             "name": "Invalid",
@@ -217,12 +217,12 @@
         {
             "name": "YAML Key",
             "scope": "entity.name.tag.yaml",
-            "foreground": "var(weak-cyan)"
+            "foreground": "var(cyan-weak)"
         },
         {
             "name": "YAML String",
             "scope": "source.yaml string.unquoted",
-            "foreground": "var(weak-violet)"
+            "foreground": "var(violet-weak)"
         },
         {
             "name": "markup headings",
@@ -231,18 +231,18 @@
         {
             "name": "markup headings",
             "scope": "markup.heading punctuation.definition.heading",
-            "foreground": "var(weak-cyan)",
+            "foreground": "var(cyan-weak)",
             "font_style": "bold"
         },
         {
             "name": "markup h1",
             "scope": "markup.heading.1 punctuation.definition.heading",
-            "foreground": "var(weak-cyan)"
+            "foreground": "var(cyan-weak)"
         },
         {
             "name": "markup links",
             "scope": "string.other.link, markup.underline.link",
-            "foreground": "var(weak-blue)"
+            "foreground": "var(blue-weak)"
         },
         {
             "name": "markup bold",
@@ -282,7 +282,7 @@
         {
             "name": "markup hr",
             "scope": "punctuation.definition.thematic-break",
-            "foreground": "var(weak-orange)"
+            "foreground": "var(orange-weak)"
         },
         {
             "name": "markup numbered list bullet",
@@ -297,12 +297,12 @@
         {
             "name": "markup code",
             "scope": "markup.raw",
-            "background": "var(strong-grey)"
+            "background": "var(grey-strong)"
         },
         {
             "name": "markup code",
             "scope": "markup.raw.inline",
-            "background": "var(strong-grey)"
+            "background": "var(grey-strong)"
         },
         {
             "name": "markup punctuation",
@@ -322,12 +322,12 @@
         {
             "name": "diff.inserted",
             "scope": "markup.inserted",
-            "foreground": "var(strong-cyan)"
+            "foreground": "var(cyan-strong)"
         },
         {
             "name": "diff.changed",
             "scope": "markup.changed",
-            "foreground": "var(weak-orange)"
+            "foreground": "var(orange-weak)"
         },
         {
             "name": "CSS Properties",
