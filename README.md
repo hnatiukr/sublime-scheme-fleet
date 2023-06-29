@@ -1,5 +1,5 @@
 # sublime-scheme-fleet
 
-A dark color scheme with highlighting for Sublime Text based on JetBrains Fleet colors.
+A dark color scheme with highlighting for Sublime Text.
 
 ![Screenshot](fleet-color-scheme.png)
